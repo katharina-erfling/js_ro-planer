@@ -8,6 +8,25 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.2
+
+#### ✅ Geprüft & korrigiert
+
+- VDH-Klassenzuordnung der Schilder systematisch gegen das Regelwerk 2027 geprüft und als eigene Regelwerkslogik hinterlegt.
+- Beginner enthält die Übungen der Gruppe B.
+- Klasse 1 enthält die Übungen aus Beginner und Klasse 1.
+- Klasse 2 enthält die Übungen aus Beginner, Klasse 1 und Klasse 2.
+- Klasse 3 enthält die Übungen aus Beginner, Klasse 1, Klasse 2 und Klasse 3.
+- Senior bleibt eine eigenständige Auswahl nach Anhang 3 und wird nicht aus der normalen Klassenhierarchie abgeleitet.
+- Für Senior werden bei den Zusatzschildern ausschließlich Z-a, Z-c und Z-e berücksichtigt.
+- Die zulässigen Übungszahlen pro Klasse wurden als geprüfte Regelwerksdaten hinterlegt.
+- In der Schilderbibliothek wird nun direkt angezeigt, aus welchen Schildergruppen sich die gewählte Klasse zusammensetzt.
+
+#### 🧩 Vorbereitung
+
+- Die geprüften Klassendaten stehen künftig auch der Regelprüfung und dem Parcoursgenerator zur Verfügung.
+- Ein separater QA-Datensatz dokumentiert die aktuelle Klassenzuordnung der Bibliothek.
+
 ### v0.2.1
 
 #### 🔄 Verbessert
