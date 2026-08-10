@@ -8,6 +8,32 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.9
+
+#### ✨ Neu
+
+- Neuer Bereich **Geräte** in der linken Bibliothek.
+- Pylonen können beliebig oft frei auf der Parcoursfläche platziert und verschoben werden.
+- Hürden können frei platziert, verschoben und gedreht werden.
+- Geräte können im rechten Detailbereich ausgewählt und wieder entfernt werden.
+- Frei platzierte Geräte werden gemeinsam mit dem Parcours gespeichert und wieder geladen.
+
+#### 🎨 Design
+
+- Pylonen und Hürden werden als kleine eigene Karten dargestellt, optisch angelehnt an die bestehende Schilderbibliothek.
+- Auch auf der Parcoursfläche bleiben die Geräte bewusst schlicht und weich gestaltet, damit sie zu den pastelligen Bedienelementen passen.
+
+#### 🧠 Parcourslogik
+
+- Geräte sind vollständig von den Übungsstationen getrennt.
+- Pylonen und Hürden erhalten keine Stationsnummer.
+- Frei platzierte Geräte werden bei der Laufwegberechnung nicht als eigene Station berücksichtigt.
+- Die Geräteebene ist für spätere Übungen vorbereitet, deren Aufbau bestimmte Pylonen-, Hürden- oder andere Geräteanordnungen voraussetzt.
+
+#### ♻️ Kompatibilität
+
+- Bereits gespeicherte Parcours aus älteren Versionen ohne Geräte-Daten können weiterhin geladen werden.
+
 ### v0.2.8
 
 #### ✨ Neu
@@ -19,7 +45,6 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 
 #### 🎨 Texte & Darstellung
 
-- Alle sichtbaren Bezeichnungen mit „Vibe Coding“ bzw. „Vibe-Coding“ wurden aus dem RO Planer entfernt.
 - Der Footer wurde auf **„RO Planer · Rally Obedience Parcoursplanung“** geändert.
 - Der RO Planer wird in Oberfläche und Projektdokumentation als eigenständiges Softwareprojekt dargestellt.
 
