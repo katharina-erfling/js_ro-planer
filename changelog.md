@@ -8,6 +8,29 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.12
+
+#### ✨ Neu
+
+- Geräte-Sets bleiben nach dem Einfügen zunächst als zusammengehörige Gruppe erhalten.
+- Beim Verschieben eines Geräts aus einer aktiven Gruppe wird das komplette Set gemeinsam verschoben.
+- Die relativen Abstände und die ursprüngliche Anordnung der Geräte bleiben beim gemeinsamen Verschieben erhalten.
+- Im Detailbereich steht für gruppierte Geräte die Aktion **„Aus Gruppe lösen“** zur Verfügung.
+- Mit **„Gruppe auflösen“** kann die Gruppierung eines kompletten Sets aufgehoben werden.
+
+#### 🔄 Verbessert
+
+- Nach dem Lösen eines einzelnen Geräts bleibt der restliche Set-Aufbau weiterhin gruppiert.
+- Besteht eine Gruppe nach Änderungen nur noch aus einem Gerät, wird die Gruppierung automatisch entfernt.
+- Gelöste bzw. aufgelöste Geräte können anschließend wieder vollständig unabhängig voneinander verschoben werden.
+- Gruppierte Geräte werden auf der Parcoursfläche dezent als zusammengehörig hervorgehoben, sobald ein Mitglied der Gruppe ausgewählt ist.
+
+#### 🧠 Parcourslogik
+
+- `groupId` wird nun aktiv für gemeinsames Verschieben und Auflösen von Geräte-Sets verwendet.
+- Die Gruppierung beeinflusst weiterhin weder Stationsnummerierung noch Laufweg.
+- Die Einzelobjekte eines Sets bleiben vollständig erhalten; Gruppierung ist lediglich eine zusätzliche Bearbeitungsebene.
+
 ### v0.2.11
 
 #### ✨ Neu
