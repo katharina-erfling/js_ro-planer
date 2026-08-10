@@ -8,6 +8,27 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.10
+
+#### ✨ Neu
+
+- **Schale mit Ablenkung** als frei platzierbares Parcoursobjekt ergänzt.
+- **Schale ohne Ablenkung** als eigenes frei platzierbares Parcoursobjekt ergänzt.
+- Beide Schalentypen können beliebig oft auf dem Parcours platziert und frei verschoben werden.
+- Die beiden Varianten sind sowohl in der Gerätebibliothek als auch auf der Parcoursfläche optisch voneinander unterscheidbar.
+
+#### 🎨 Design
+
+- Ablenkungsschalen erhalten eine eigene kleine Illustration im Stil der bestehenden Pylonen- und Hürdenkarten.
+- Die Schale mit Ablenkung zeigt dezent angedeuteten Inhalt.
+- Die Schale ohne Ablenkung bleibt optisch leer.
+
+#### 🧠 Parcourslogik
+
+- Schalen werden wie Pylonen und Hürden als freie Parcoursobjekte behandelt.
+- Sie erhalten keine Stationsnummer und verändern den automatischen Laufweg nicht.
+- Die getrennten Gerätetypen **mit Ablenkung** und **ohne Ablenkung** können später von der regelbasierten Übungs- und Generatorlogik gezielt unterschieden werden.
+
 ### v0.2.9
 
 #### ✨ Neu
