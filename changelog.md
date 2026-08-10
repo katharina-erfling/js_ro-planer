@@ -8,6 +8,36 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+## 🌸 v0.2 – Schilderbibliothek & Design
+
+### v0.2.0
+
+#### ✨ Neu
+
+- Neues freundliches Pastelldesign.
+- Regelwerk-Auswahl für **VDH 2027** und **FCI International**.
+- Klassenfilter abhängig vom gewählten Regelwerk.
+- Vollständige VDH-Schilderbibliothek mit Originalgrafiken.
+- Filter nach Typ A, Typ B und Senior.
+- Offizielle Übungsbeschreibung im Detailbereich.
+- Zoomfunktion für die Parcoursfläche.
+- Stationen werden intern bereits als Container gespeichert.
+- Parcoursdaten speichern `rulesetId` und `classId`.
+
+#### 🔄 Verbessert
+
+- Schilderbibliothek deutlich übersichtlicher gestaltet.
+- Parcoursfläche vergrößert und optisch ruhiger gestaltet.
+- Detailbereich informativer aufgebaut.
+- Suche berücksichtigt Nummer, Bezeichnung und Beschreibung.
+- Responsive Grundstruktur überarbeitet.
+
+#### 🚧 Vorbereitung
+
+- FCI-Übungsdaten sind bereits im gemeinsamen Datenmodell enthalten.
+- FCI-Originalgrafiken werden erst nach verifizierter Zuordnung eingebunden.
+- Datenmodell für spätere Mehrschildübungen, Regelprüfung und Generatorlogik vorbereitet.
+
 
 ## 🌱 v0.1 -- Grundversion
 
