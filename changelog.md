@@ -8,6 +8,27 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.7
+
+#### ✨ Neu
+
+- Stationsnummern werden nun als kleine separate Mini-Schilder neben den eigentlichen Übungsschildern dargestellt.
+- Der optionale Laufweg enthält dezente kleine Pfoten als zusätzliche Orientierung.
+- Bei **automatischer Nummerierung** erhält ein neu platziertes Schild automatisch die Ausrichtung, die sich aus der Laufrichtung der vorherigen Station ergibt.
+
+#### 🎨 Design
+
+- Die runden Nummern-Badges wurden durch kleine rechteckige Nummernschilder mit angedeutetem Schildhalter ersetzt.
+- Laufwege werden nun als gerade Verbindungen zwischen den Stationen dargestellt.
+- Linien und Pfoten besitzen bewusst eine sehr geringe Deckkraft und bleiben optisch deutlich hinter den Übungsschildern.
+
+#### 🧠 Parcourslogik
+
+- Für die automatische Ausrichtung wird die Rotation der vorherigen Station mit der hinterlegten resultierenden Richtungsänderung der Übung kombiniert.
+- Bei Übungen ohne hinterlegte Richtungsänderung bleibt die bisherige Laufrichtung erhalten.
+- Die Rotation kann anschließend weiterhin manuell verändert werden; eine manuelle Änderung überschreibt die automatische Ausrichtung dieser Station.
+- Offensichtlich fehlerhafte Richtungsmetadaten mehrteiliger Wendungen wurden anhand der Übungsbeschreibung korrigiert, wenn die Übung wieder in der ursprünglichen Laufrichtung endet.
+
 ### v0.2.6
 
 #### 🐛 Behoben
