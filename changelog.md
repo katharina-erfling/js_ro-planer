@@ -8,6 +8,27 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.3
+
+#### ✨ Neu
+
+- Klick auf ein Schild in der linken Bibliothek öffnet jetzt direkt die Vorschau mit Regelwerkbeschreibung im rechten Detailbereich.
+- Übungen, die laut VDH-Regelwerk zwingend ein Zusatzschild benötigen, verlangen beim Platzieren automatisch die Auswahl eines passenden Zusatzschildes.
+- Haupt- und Zusatzschild werden anschließend gemeinsam als eine Station auf dem Parcours dargestellt.
+- Das gewählte Zusatzschild kann bei einer bereits platzierten Station im Detailbereich nachträglich geändert werden.
+
+#### ✅ Regelprüfung
+
+- Zusatzschilder Z-a bis Z-e können nicht mehr als eigenständige Station auf den Parcours gezogen werden.
+- Zusatzschilder werden als Abschluss einer Hauptübung behandelt und bleiben technisch mit dieser Hauptübung verknüpft.
+- Für Senior stehen bei erforderlichen Zusatzschildern ausschließlich Z-a, Z-c und Z-e zur Auswahl.
+- Die Pflicht zum Zusatzschild wird aus den entsprechenden Übungsbeschreibungen des VDH-Regelwerks abgeleitet und nicht pauschal nur anhand des Wortes „Vorsitz“ vergeben.
+
+#### 🔄 Verbessert
+
+- Schilder mit erforderlichem Zusatzschild werden bereits in der Bibliothek entsprechend gekennzeichnet.
+- Zusatzschilder werden in der Bibliothek als nicht eigenständig platzierbare Schilder gekennzeichnet.
+
 ### v0.2.2
 
 #### ✅ Geprüft & korrigiert
