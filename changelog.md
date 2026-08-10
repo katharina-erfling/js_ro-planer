@@ -8,6 +8,33 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.11
+
+#### ✨ Neu
+
+- Ausgewählte Übungsstationen können jetzt mit **Entf/Delete** direkt von der Parcoursfläche gelöscht werden.
+- Auch frei platzierte Geräte lassen sich mit **Entf/Delete** entfernen.
+- Neuer Bereich **Geräte-Sets** für häufig benötigte PO-Aufbauten.
+- Folgende Schnellaufbauten stehen zur Verfügung:
+  - 2 Pylonen in einer Reihe mit 1,50 m Abstand
+  - 3 Pylonen in einer Reihe mit je 1,50 m Abstand
+  - 4 Pylonen in einer Reihe mit je 1,50 m Abstand
+  - 4 leere Schalen als Raute
+  - 4 Schalen mit Ablenkung als Raute
+- Die Schalen-Raute wird mit 3 m Längsabstand und ca. 1,50 m Querabstand angelegt.
+
+#### 🧠 Parcourslogik
+
+- Geräte-Sets dienen als Schnellaufbau und erzeugen anschließend normale einzelne Geräteobjekte.
+- Die automatisch gesetzten Geräte können nach dem Einfügen weiterhin einzeln verschoben und angepasst werden.
+- Die Grundmaße der Pylonenreihen und Schalen-Rauten orientieren sich an den entsprechenden Aufbauangaben des VDH-Regelwerks 2027.
+- Die Set-Struktur ist darauf vorbereitet, später weitere regelwerksbezogene Geräteanordnungen für bestimmte Übungen aufzunehmen.
+
+#### ⌨️ Bedienung
+
+- Die Delete-Taste reagiert nur auf eine aktuell ausgewählte Station bzw. ein ausgewähltes Gerät.
+- Während der Eingabe in Text-, Zahlen- oder Auswahlfeldern wird die Delete-Taste nicht zum Löschen von Parcoursobjekten verwendet.
+
 ### v0.2.10
 
 #### ✨ Neu
