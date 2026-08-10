@@ -8,6 +8,27 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.4
+
+#### ✨ Neu
+
+- Stationsnummern können optional auf dem Parcours eingeblendet werden.
+- Ein optionaler Laufweg verbindet die platzierten Stationen automatisch in ihrer Reihenfolge.
+- Der Laufweg wird beim Verschieben von Stationen live neu berechnet.
+- Die Wegführung wird als dezente, leicht geschwungene Linie mit Richtungspfeilen dargestellt.
+
+#### 🎨 Design
+
+- Hauptschild und Zusatzschild werden auf dem Parcours nun optisch als zwei eigenständige Schilder dargestellt.
+- Zwischen Haupt- und Zusatzschild bleibt ein sichtbarer Abstand; beide besitzen eigenen Rahmen, Hintergrund und Schatten.
+- Laufweg und Pfeile verwenden bewusst eine zurückhaltende pastellige Farbe mit geringer Deckkraft, damit die Schilder visuell im Vordergrund bleiben.
+- Laufweg und Stationsnummern sind unabhängig voneinander ein- und ausblendbar.
+
+#### 🧩 Vorbereitung
+
+- Die aktuelle Laufwegberechnung verwendet die Reihenfolge der platzierten Stationen.
+- Die Laufwegebene ist so vorbereitet, dass später der regelbasierte Parcoursgenerator bzw. eine intelligentere Wegplanung dieselbe Darstellung verwenden kann.
+
 ### v0.2.3
 
 #### ✨ Neu
