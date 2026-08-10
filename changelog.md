@@ -8,6 +8,14 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.6
+
+#### 🐛 Behoben
+
+- Kritischen Fehler behoben, durch den Schilder nach dem Drag & Drop nicht mehr auf der Parcoursfläche erschienen.
+- Bei der Überarbeitung der Laufwegdarstellung waren Hilfsfunktionen für Schildvorschau und Zusatzschild-Logik versehentlich aus `app.js` entfernt worden.
+- Die fehlenden Funktionen wurden wieder eingebunden, sodass normale Schilder und Übungen mit verpflichtendem Zusatzschild wieder korrekt platziert und angezeigt werden.
+
 ### v0.2.5
 
 #### ✨ Neu
