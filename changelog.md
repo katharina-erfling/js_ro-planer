@@ -8,6 +8,26 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.8
+
+#### ✨ Neu
+
+- Im rechten Detailbereich kann jetzt zwischen **Kurz erklärt** und **Regelwerk** gewechselt werden.
+- **Kurz erklärt** zeigt die Übungsbeschreibung kompakt als Bullet Points.
+- **Regelwerk** zeigt weiterhin die vollständige hinterlegte Regelwerkbeschreibung.
+- Die zuletzt gewählte Textansicht wird lokal gespeichert und beim nächsten Schild beibehalten.
+
+#### 🎨 Texte & Darstellung
+
+- Alle sichtbaren Bezeichnungen mit „Vibe Coding“ bzw. „Vibe-Coding“ wurden aus dem RO Planer entfernt.
+- Der Footer wurde auf **„RO Planer · Rally Obedience Parcoursplanung“** geändert.
+- Der RO Planer wird in Oberfläche und Projektdokumentation als eigenständiges Softwareprojekt dargestellt.
+
+#### 🧩 Daten
+
+- Für die Schilderdaten wurde ein eigener Bereich für kompakte Kurzfassungen ergänzt.
+- Die Kurzfassungen bleiben getrennt von den offiziellen Regelwerktexten und den technischen Generator-Metadaten.
+
 ### v0.2.7
 
 #### ✨ Neu
