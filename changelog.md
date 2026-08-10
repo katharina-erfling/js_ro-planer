@@ -8,6 +8,28 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.5
+
+#### ✨ Neu
+
+- Für Stationsnummern stehen jetzt zwei Modi zur Verfügung: **Automatisch** und **Manuell**.
+- Im automatischen Modus erhalten neu abgelegte Stationen fortlaufend die nächste freie Nummer.
+- Automatisch vergebene Stationsnummern können anschließend jederzeit manuell geändert werden.
+- Im manuellen Modus werden neue Stationen zunächst ohne Nummer angelegt und können später individuell nummeriert werden.
+- Die Stationsnummer kann direkt im rechten Detailbereich bearbeitet werden.
+
+#### 🔄 Verbessert
+
+- Stationsnummern sind vollständig von der Reihenfolge entkoppelt, in der Schilder auf den Parcours gezogen wurden.
+- Der optionale Laufweg wird nun anhand der vergebenen Stationsnummern berechnet und folgt somit Station 1 → 2 → 3 usw.
+- Nicht nummerierte Stationen werden im manuellen Modus nicht in die Laufwegberechnung einbezogen.
+- Bei eingeblendeten Nummern werden noch nicht nummerierte Stationen mit `?` gekennzeichnet.
+- Wird eine bereits vergebene Stationsnummer auf eine andere nummerierte Station gesetzt, werden die beiden Nummern automatisch getauscht.
+
+#### ♻️ Kompatibilität
+
+- Ältere gespeicherte Parcours ohne eigenes Feld für Stationsnummern werden beim Laden automatisch anhand ihrer bisherigen Reihenfolge nummeriert.
+
 ### v0.2.4
 
 #### ✨ Neu
