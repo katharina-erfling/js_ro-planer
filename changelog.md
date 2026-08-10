@@ -8,6 +8,32 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.13
+
+#### 🔄 Verbessert
+
+- Die stufenlose Rotation von Übungsschildern wurde entfernt.
+- Schilder lassen sich nur noch in den vier sinnvollen Parcoursrichtungen **0° / 90° / 180° / 270°** ausrichten.
+- Auch drehbare Einzelgeräte verwenden ausschließlich diese vier festen Richtungen.
+- Der bisherige Schieberegler wurde durch vier eindeutige Ausrichtungsbuttons ersetzt.
+
+#### ✨ Neu
+
+- Gruppierte Geräte-Sets können nun als komplette Einheit gedreht werden.
+- Die gesamte Set-Anordnung rotiert dabei in 90°-Schritten um ihren gemeinsamen Mittelpunkt.
+- Abstände und Form des Sets bleiben beim Drehen erhalten.
+- Eine Pylonenreihe kann damit beispielsweise direkt von waagerecht auf senkrecht gedreht werden, ohne die einzelnen Pylonen neu platzieren zu müssen.
+
+#### 🧠 Parcourslogik
+
+- Automatisch ausgerichtete Schilder werden ebenfalls auf die vier rechtwinkligen Richtungen begrenzt.
+- Gruppen speichern ihre gemeinsame Ausrichtung separat von der individuellen Geräteausrichtung.
+- Beim Lösen oder vollständigen Auflösen einer Gerätegruppe wird die Gruppenrotation sauber entfernt, die aktuelle Lage der Einzelgeräte bleibt jedoch erhalten.
+
+#### ♻️ Kompatibilität
+
+- Freie Rotationswerte aus älteren gespeicherten Parcours werden beim Laden automatisch auf die nächstgelegene Ausrichtung 0°, 90°, 180° oder 270° gesetzt.
+
 ### v0.2.12
 
 #### ✨ Neu
