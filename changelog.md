@@ -8,6 +8,30 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.3.2
+
+#### 🇩🇪 Deutsche FCI-Regelwerktexte
+
+- Die Detailbeschreibungen aller **89 FCI-Übungsschilder 101–422** wurden auf die deutsche Fassung des FCI-Regelwerks 2024 umgestellt.
+- Die Ansicht **„Regelwerk“** zeigt bei FCI-Schildern nun die deutsche Übungsbeschreibung.
+- Die offiziellen englischen Originalschilder und deren englische Bezeichnungen bleiben unverändert, da bei internationalen FCI-Wettbewerben die Originalschilder verwendet werden.
+- Die bisher hinterlegten englischen Beschreibungen bleiben intern als Referenz erhalten.
+- Die deutschen Beschreibungen werden als inoffizielle Übersetzung gekennzeichnet; im Zweifel gilt weiterhin die offizielle englische FCI-Fassung.
+
+#### 📝 Kurz erklärt
+
+- Für alle FCI-Schilder wurde die Ansicht **„Kurz erklärt“** aus den deutschen Regelwerkbeschreibungen neu aufgebaut.
+- Die Kurzansicht zeigt die jeweilige Übung als deutsche Bullet Points.
+- Die Stichpunkte werden ausschließlich aus dem deutschen Regelwerktext abgeleitet und ergänzen keine zusätzlichen Übungsregeln.
+- Langfassung, Kurzfassung und technische Generator-Metadaten bleiben getrennte Datenbereiche.
+
+#### 🐛 Behoben
+
+- In der Gerätebibliothek wurden die Illustrationen für **Pylone** und **Hürde/Sprung** nicht mehr angezeigt.
+- Ursache war eine falsche CSS-Klassenzuordnung in der Geräte-Vorschau.
+- Pylone und Hürde werden sowohl in der linken Geräteauswahl als auch im rechten Vorschaufenster wieder korrekt dargestellt.
+- Die Darstellung der Geräte auf der Parcoursfläche bleibt unverändert.
+
 ### v0.3.1
 
 #### 🌍 FCI-Schilderbibliothek
