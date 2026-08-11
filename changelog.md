@@ -8,6 +8,36 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.15
+
+#### ✨ Neu
+- Übungsschilder können direkt mit einem passenden Geräteaufbau verknüpft werden.
+- Bei verknüpften, platzierten Schildern erscheint **„Passenden Aufbau hinzufügen“**.
+- Der Aufbau wird als gruppiertes Geräte-Set eingefügt und bleibt verschiebbar, drehbar und auflösbar.
+
+#### 🐾 VDH 2027
+- **1-111 · Slalom einfach mit Ablenkung** und **2-220 · Slalom hin und zurück – mit Ablenkung** wurden mit dem passenden Grundaufbau verknüpft.
+- Der Aufbau besteht aus **2 Pylonen und 2 Ablenkungsschalen** auf einer gedachten Geraden mit jeweils **1,50 m Abstand**.
+- Die beiden mittleren Positionen werden durch die Ablenkungsschalen gebildet.
+
+#### 🧠 Parcourslogik
+- Geräteaufbauten sind als technische Metadaten am Schild hinterlegt.
+- Weitere Aufbauten werden nur ergänzt, wenn ihre Anordnung aus dem Regelwerk eindeutig hervorgeht.
+
+### v0.2.14
+
+#### 🐛 Behoben
+
+- Fehler behoben, durch den die Drehsteuerung bei gruppierten Pylonen und Schalen nicht angezeigt wurde.
+- Die Sichtbarkeit der Rotation wird bei Geräte-Sets jetzt ausdrücklich anhand der Gruppierung geprüft und nicht nur anhand der Drehbarkeit des einzelnen Geräts.
+
+#### 🔄 Verbessert
+
+- Wird ein Gerät aus einem gruppierten Set ausgewählt, erscheint im rechten Detailbereich jetzt **„Gruppe drehen“**.
+- Die komplette Gruppe kann dort über die vier festen Ausrichtungen **0° / 90° / 180° / 270°** gedreht werden.
+- Dies funktioniert auch bei Pylonen und Schalen, die als Einzelobjekte keine eigene Rotation benötigen.
+- Nach dem Auflösen der Gruppe wird die Gruppen-Drehsteuerung wieder ausgeblendet; bei individuell drehbaren Geräten bleibt die normale Ausrichtung verfügbar.
+
 ### v0.2.13
 
 #### 🔄 Verbessert
