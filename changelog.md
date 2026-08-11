@@ -8,6 +8,23 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.3.7
+
+#### 🥣 Gemeinsame Ablenkungsgeräte
+
+- Das in v0.3.5 eingeführte separate Geräteobjekt **„FCI-Ablenkung“** wurde wieder entfernt.
+- FCI und VDH verwenden für Ablenkungen nun dieselben bereits vorhandenen Geräte.
+- FCI-Schild **221** ist jetzt mit der bestehenden **Schale mit Ablenkung** verknüpft.
+- Der automatische bzw. geführte Grundaufbau für 221 setzt entsprechend zwei dieser gemeinsamen Ablenkungsschalen.
+- Dadurch gibt es keine unnötigen doppelten Gerätearten mehr in der Gerätebibliothek.
+
+#### 🖐️ Ruhigere Setzhilfe
+
+- Die zusätzliche Beschriftung **„am Mauszeiger“** wurde von der Platzierungsvorschau entfernt.
+- Die halbtransparente Geräte- bzw. Aufbauvorschau folgt weiterhin sichtbar dem Mauszeiger.
+- Der Hinweis **„Klicken zum Setzen · Esc zum Abbrechen“** bleibt als Bedienhilfe auf der Parcoursfläche erhalten.
+- Die Setzhilfe wirkt dadurch aufgeräumter und selbsterklärender.
+
 
 ### v0.3.6
 
