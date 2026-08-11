@@ -8,6 +8,50 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.3.5
+
+#### 🌍 Vollständige FCI-Gerätezuordnung
+
+- Alle FCI-Übungen, für die die deutsche FCI-PO ausdrücklich Parcours-Equipment nennt, wurden systematisch erfasst.
+- **119 / 120**: jeweils 3 kleine Kegel in einer Geraden mit 1,5–2 m Abstand.
+- **121 / 122**: jeweils 4 kleine Kegel in einer Geraden mit 1,5–2 m Abstand.
+- **221**: 2 kleine Kegel plus 2 Ablenkungen als Figurenaufbau.
+- **222 / 420**: jeweils 1 offener Sprung; Schild 2 m vor dem Sprung.
+- **320**: 2 offene Sprünge; erster Sprung 2 m nach dem Schild, mindestens 4 m Abstand zwischen den Sprüngen.
+- **319 / 408 / 409**: kleiner Rückrufkegel; alternativ kann ein spezielles Rückrufschild verwendet werden.
+- **410**: großer Sendekegel plus kleiner Rückrufkegel.
+- **417 / 418**: jeweils ein großer, gut sichtbarer Kegel 1–2 m vom Schild.
+- **421**: Sprung als relationale Sonderanordnung zwischen vorherigem Schild und Rückrufschild hinterlegt.
+
+#### 📐 PO-Grundaufbauten
+
+- Für die Figuren 119–122 können die Kegel direkt als vollständiger PO-Grundaufbau eingefügt werden.
+- Für 221 kann ein Grundaufbau aus 2 Kegeln und 2 Ablenkungen erzeugt werden.
+- Für 222 und 420 kann der Sprung direkt 2 m hinter dem Schild eingefügt werden.
+- Für 320 werden zwei Sprünge als gerader Standardaufbau mit 4 m Abstand erzeugt; die PO erlaubt anschließend weiterhin eine individuelle Anordnung bis zu 90°.
+
+#### 🗼 Kegelgrößen
+
+- Die FCI-Regeldaten unterscheiden jetzt zwischen **kleinen Kegeln (ca. 15 cm)** und **großen Kegeln (ca. 40–50 cm)**.
+- Kleine Kegel werden für Figuren und Rückrufmarkierungen verwendet.
+- Große Kegel werden für 410, 417 und 418 verwendet.
+- Die jeweilige Kegelgröße wird im rechten Detailbereich angezeigt.
+
+#### ⭐ Ablenkungen
+
+- Neues Geräteobjekt **FCI-Ablenkung** ergänzt.
+- Es repräsentiert bei 221 Spielzeug oder ein abgedecktes Leckerli und wird nicht mit den VDH-Schalen gleichgesetzt.
+- Die zwei Ablenkungen sind als eigener Bestandteil des Figurenaufbaus hinterlegt.
+
+#### 🧭 Erweiterte Setzhilfe
+
+- Die FCI-Setzhilfe unterstützt jetzt auch mehrteilige Aufbauten.
+- Bei **410** führt sie nacheinander durch das Setzen von Sendekegel und Rückrufkegel.
+- Bei Figuren- und Sprungübungen kann der vollständige PO-Grundaufbau als Einheit eingesetzt werden.
+- Relationelle Rückrufschilder 321/322/323/422 speichern ihren vorgeschriebenen Abstand von 3–5 m zum vorherigen Schild.
+- 421 wird als Sonderfall mit 8 m Schildabstand und einem mittig angeordneten, seitlich versetzten Sprung geführt.
+
+
 ### v0.3.4
 
 #### 🌍 FCI-Equipmentregeln
