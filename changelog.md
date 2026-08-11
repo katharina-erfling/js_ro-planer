@@ -8,6 +8,29 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.3.8
+
+#### 🐛 FCI-Schildbilder korrigiert
+
+- Die FCI-Originalschildbilder wurden vollständig neu mit den jeweiligen Schildnummern verknüpft.
+- Die bisherige Zuordnung beruhte auf der Reihenfolge der eingebetteten PDF-Bilder; diese entspricht im offiziellen Dokument nicht durchgehend der numerischen Schildreihenfolge.
+- Die neue Zuordnung erfolgt anhand der tatsächlichen Position von Schildnummer und Bild in derselben Tabellenzeile des offiziellen FCI-Dokuments.
+- Alle **89 FCI-Schilder** wurden auf diese Weise neu zugeordnet.
+
+#### 🔎 417–420
+
+- **417** zeigt jetzt korrekt **90° LEFT TURN AROUND CONE** und verwendet den großen Kegel.
+- **418** zeigt jetzt korrekt **90° RIGHT TURN AROUND CONE** und verwendet den großen Kegel.
+- **419** zeigt jetzt korrekt **MOVING SIT, WALK AROUND**; laut PO gehört zu dieser Übung kein Kegel.
+- **420** zeigt jetzt korrekt **STOP, RECALL OVER JUMP**; zu dieser Übung gehört der Sprung 2 m hinter dem Schild, kein zusätzlicher Kegel.
+- Der Eindruck fehlender Pylonen bei 419/420 entstand durch die zuvor verschobene Bildzuordnung.
+
+#### 📏 Distanzdarstellung
+
+- Bei gruppierten FCI-Geräte-Presets werden nicht mehr gleichzeitig Schild→jedes Einzelgerät-Distanzen und die eigentlichen PO-Abstände dargestellt.
+- Figuren wie 119–122 und 221 zeigen nur noch die für den Aufbau relevanten Gerätedistanzen.
+- Dadurch werden überlagerte und unlesbare Meterlabels deutlich reduziert.
+
 ### v0.3.7
 
 #### 🥣 Gemeinsame Ablenkungsgeräte
