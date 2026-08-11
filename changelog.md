@@ -8,6 +8,21 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.3.3
+
+#### 🎨 Darstellung
+
+- Die ausgeschriebene Übungsbezeichnung unter platzierten Schildern wurde von der Parcoursfläche entfernt.
+- Auf dem Parcours werden jetzt nur noch **Originalschildgrafik und Schildnummer** angezeigt.
+- Die Änderung gilt sowohl für **VDH-** als auch für **FCI-Schilder**.
+- Die vollständige Bezeichnung bleibt weiterhin in der Schilderbibliothek und im rechten Detailbereich verfügbar.
+
+#### 🔄 Verbessert
+
+- Platzierte Schilder sind dadurch deutlich kompakter und beanspruchen weniger Raum auf der Parcoursfläche.
+- Die Höhe der Schildkarten wurde entsprechend reduziert.
+- Der Fokus auf der Parcoursfläche liegt stärker auf Schildgrafik, Position, Nummerierung, Geräten und Laufweg.
+
 ### v0.3.2
 
 #### 🇩🇪 Deutsche FCI-Regelwerktexte
