@@ -8,6 +8,38 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.16
+
+#### ✨ Neu
+
+- Regelwerksbezogene Geräteaufbauten werden beim Einfügen direkt mit dem zugehörigen Übungsschild verknüpft.
+- Schild und verknüpfter Geräteaufbau können als gemeinsame Einheit verschoben werden.
+- Wird ein verknüpftes Geräte-Set bewegt, bewegt sich das zugehörige Schild ebenfalls mit.
+- Beim Drehen eines Schildes rotiert der komplette verknüpfte Aufbau passend mit.
+- Wird ein verknüpftes Geräte-Set ausgewählt, steht die gemeinsame Aktion **„Schild + Aufbau drehen“** zur Verfügung.
+
+#### 🐾 Slalom-Aufbau
+
+- Der Slalom-Aufbau wird bei aufrechter Schildausrichtung standardmäßig **oberhalb des Schildes nach oben in Laufrichtung** angeordnet.
+- Die Geräte bleiben dabei als Set gruppiert und zusätzlich mit der Übungsstation verknüpft.
+- Bei einer Drehung der Station um 90°, 180° oder 270° wird die komplette Geräteanordnung entsprechend mitgedreht.
+
+#### 🖱️ Mehrfachauswahl
+
+- Auf freier Parcoursfläche kann jetzt durch Aufziehen eines Rechtecks eine Mehrfachauswahl erstellt werden.
+- Das Auswahlrechteck kann gleichzeitig Übungsschilder und Geräte erfassen.
+- Alle markierten Elemente können anschließend gemeinsam verschoben werden.
+- Die komplette Mehrfachauswahl kann mit **Entf/Delete** gelöscht werden.
+- Im rechten Detailbereich wird die Anzahl der ausgewählten Elemente angezeigt.
+- Verknüpfte Geräte folgen auch dann ihrem Schild, wenn bei einer Mehrfachauswahl nur das Schild selbst erfasst wurde.
+
+#### 🧠 Parcourslogik
+
+- Schild und Geräte bleiben technisch eigenständige Objekte, werden bei automatisch erzeugten Aufbauten aber explizit miteinander verknüpft.
+- Dadurch bleibt die bestehende Geräte-Gruppierung erhalten, während zusätzlich gemeinsames Verschieben und Drehen mit der Station möglich ist.
+- Beim bewussten Auflösen einer Gerätegruppe kann die Verbindung zur Station wieder gelöst werden.
+- Beim Löschen einer Station werden noch mit ihr verknüpfte Geräte ebenfalls entfernt.
+
 ### v0.2.15
 
 #### ✨ Neu
