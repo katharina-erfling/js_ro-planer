@@ -8,6 +8,32 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.19
+
+#### 🐛 Behoben
+
+- Der automatische Aufbau für **1-111 · Slalom einfach mit Ablenkung** war räumlich falsch am Schild verankert.
+- Die Gerätefolge wurde bisher über ihren Mittelpunkt positioniert; dadurch konnte die erste bzw. unterste Pylone hinter dem Übungsschild liegen oder optisch verschwinden.
+- Die fehlerhafte Mittelpunkt-Verankerung wurde für diesen Aufbau entfernt.
+
+#### 🐾 VDH 2027
+
+- Der Slalom-Aufbau folgt jetzt der tatsächlichen PO-Struktur:
+  - erste Pylone
+  - erste Ablenkungsschale
+  - zweite Ablenkungsschale
+  - letzte Pylone
+- Alle vier Positionen liegen auf einer gedachten Geraden mit jeweils **1,50 m Abstand**.
+- Das Übungsschild wird entsprechend der PO **in der Nähe der ersten Pylone** platziert.
+- Der Eingang in den Slalom bleibt damit zwischen erster Pylone und erster Ablenkung abbildbar.
+
+#### 🧠 Parcourslogik
+
+- Für Geräteaufbauten kann nun eine explizite Ankerstrategie hinterlegt werden.
+- Der Slalom mit Ablenkung verwendet `first-item` als Anker: Nicht der Mittelpunkt der Gruppe, sondern das erste Gerät bestimmt die Lage relativ zum Schild.
+- Zusätzlich können seitlicher Abstand und Vorwärtsversatz des ersten Geräts relativ zur Station definiert werden.
+- Diese Ankerlogik kann später auch für weitere PO-Aufbauten verwendet werden, bei denen das Schild ausdrücklich in der Nähe eines bestimmten Geräts stehen muss.
+
 ### v0.2.18
 
 #### 🐛 Behoben
