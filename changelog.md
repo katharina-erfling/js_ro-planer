@@ -8,6 +8,41 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+## 🌍 v0.3 – FCI-Manueller Parcoursplaner
+
+### v0.3.0
+
+#### ✨ Neu
+
+- Neuer Entwicklungsschwerpunkt **FCI International Class** für das manuelle Erstellen von Trainings- und Wettkampfparcours.
+- Meterbasierter Parcoursmaßstab mit **55 px = 1 m**.
+- Direkte Distanzanzeige zwischen aufeinanderfolgenden nummerierten Stationen.
+- Zusätzliche Distanzanzeige zwischen verknüpften Schildern und Geräten/Pylonen.
+- Distanzwerte werden in Metern mit einer Nachkommastelle dargestellt.
+- Die Distanzanzeige kann separat ein- und ausgeschaltet werden.
+
+#### 🧭 FCI-Setzhilfe
+
+- Neue zuschaltbare **FCI-Setzhilfe**.
+- Nach dem Platzieren bestimmter FCI-Schilder kann der Planer automatisch in den Modus **„Pylone setzen“** wechseln.
+- Die benötigte Pylone befindet sich damit sinngemäß direkt „in der Hand“ und wird mit dem nächsten Klick auf die Parcoursfläche gesetzt.
+- Die Setzhilfe kann jederzeit deaktiviert werden, wenn Geräte vollständig manuell oder über einen automatischen Komplettaufbau gesetzt werden sollen.
+- Erste Setzhilfen wurden für Übungen mit Rückrufmarkierungen sowie für die 90°-Kegelübungen vorbereitet.
+
+#### 📏 FCI-Distanzen
+
+- Die allgemeinen FCI-Abstände von etwa **3–5 m zwischen Übungen** können nun direkt beim manuellen Parcoursbau kontrolliert werden.
+- Regelwerksabhängige Geräteabstände können als technische Metadaten hinterlegt und im Planer sichtbar gemacht werden.
+- Für Rückrufmarkierungen sind **5 m** als Regelwert vorbereitet.
+- Für die Kegelübungen 417/418 ist der Bereich **1–2 m** vorbereitet.
+- Die vorhandene Struktur ist außerdem für **2 m Schild → Sprung** und **1,5–2 m Schild → erster Kegel bei Figurenübungen** vorbereitet.
+
+#### 🧠 Vorbereitung
+
+- Distanzwerte und FCI-Geräteanforderungen liegen nicht nur als UI-Hinweise vor, sondern sind als technische Regeln vorbereitet.
+- Damit können dieselben Daten später für Warnungen, automatische PO-Aufbauten und den eigentlichen FCI-Parcoursgenerator verwendet werden.
+
+
 ### v0.2.19
 
 #### 🐛 Behoben
