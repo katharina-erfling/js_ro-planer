@@ -8,6 +8,35 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.3.1
+
+#### 🌍 FCI-Schilderbibliothek
+
+- Die bisherige provisorische FCI-Schilderbibliothek wurde vollständig neu aus der offiziellen FCI-Quelle aufgebaut.
+- Alle **89 nummerierten FCI-Übungsschilder von 101 bis 422** sind jetzt vorhanden.
+- Das in der bisherigen Datenbasis fehlende Schild **322 · TURN AROUND, RECALL FRONT STOP, RIGHT TO LEFT, STOP (B)** wurde ergänzt.
+- Zusätzlich wurden die offiziellen Grafiken für **START** und **FINISH** als FCI-Assets hinterlegt.
+
+#### 🖼️ Originalschilder
+
+- Jedes FCI-Schild verwendet jetzt die zugehörige Originalgrafik aus dem offiziellen FCI-Dokument **„Descriptions of the FCI Class Exercise Signs“**.
+- Die Grafiken wurden in der offiziellen Dokumentreihenfolge eindeutig den Schildnummern zugeordnet.
+- Die bisherigen Platzhalter bzw. nicht verifizierten Bildzuordnungen wurden ersetzt.
+- Der Bildstatus der FCI-Schilder ist jetzt als **verifiziert** hinterlegt.
+
+#### 📚 Offizielle Schilddaten
+
+- Englische Originalbezeichnungen der FCI-Schilder wurden mit der offiziellen Quelle abgeglichen.
+- Punktwerte werden korrekt aus den vier FCI-Schildgruppen 1 / 2 / 3 / 4 übernommen.
+- Arbeitsbereiche A / B / C / D werden, soweit im Schildtitel angegeben, strukturiert gespeichert.
+- Die ausführlichen offiziellen englischen Übungsbeschreibungen aus FCI Item 5 wurden den einzelnen Schildern zugeordnet.
+- Die FCI-Daten sind als **„verified-from-official-fci-item-5“** gekennzeichnet.
+
+#### 🧠 Grundlage für den FCI-Planer
+
+- Die Geräte-, Abstands- und Setzhilfen können ab jetzt auf die tatsächlich richtigen FCI-Schildnummern und Originalschilder referenzieren.
+- Weitere FCI-Regellogik wird auf dieser verifizierten Bibliothek aufgebaut und nicht mehr auf dem früheren provisorischen Datenstand.
+
 ## 🌍 v0.3 – FCI-Manueller Parcoursplaner
 
 ### v0.3.0
