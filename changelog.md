@@ -8,6 +8,28 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.17
+
+#### 🐛 Behoben
+
+- Beim Drehen gruppierter Geräte wurden bisher nicht nur deren Positionen, sondern auch die einzelnen Geräte selbst mitgedreht.
+- Dadurch erschienen insbesondere Schalen nach einer Drehung des Aufbaus seitlich bzw. hochkant.
+- Die Gruppenrotation wurde korrigiert: Sie verändert jetzt ausschließlich die räumliche Anordnung der Geräte.
+
+#### 🔄 Verbessert
+
+- Pylonen, Schalen und Hürden behalten beim Drehen eines Geräte-Sets ihre eigene optische Ausrichtung bei.
+- Dasselbe Verhalten gilt für Geräteaufbauten, die direkt mit einem Übungsschild verknüpft sind.
+- Beim Drehen eines Schildes rotiert der verknüpfte Aufbau weiterhin passend um die Station, die einzelnen Geräte bleiben dabei jedoch optisch aufrecht.
+- Die Bezeichnung **„Gruppe drehen“** wurde in **„Anordnung drehen“** geändert.
+- Bei verknüpften Aufbauten lautet die Aktion nun **„Schild + Anordnung drehen“**.
+
+#### 🧠 Parcourslogik
+
+- Gruppenrotation und Geräteausrichtung werden nun als zwei getrennte Konzepte behandelt.
+- `groupRotation` beschreibt ausschließlich die Orientierung der Anordnung.
+- `rotation` eines einzelnen Geräts wird durch das Drehen der Gruppe nicht mehr automatisch verändert.
+
 ### v0.2.16
 
 #### ✨ Neu
