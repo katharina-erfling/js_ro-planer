@@ -8,6 +8,27 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.2.18
+
+#### 🐛 Behoben
+
+- Automatisch eingefügte Geräteaufbauten konnten bisher teilweise in das zugehörige Übungsschild hineinragen.
+- Ursache war eine feste Positionierung des Set-Mittelpunkts, ohne die tatsächliche Länge des Geräteaufbaus zu berücksichtigen.
+- Beim Slalom konnte dadurch insbesondere die unterste Pylone im Bereich des Schildes stehen.
+
+#### 🔄 Verbessert
+
+- Der Abstand eines verknüpften Geräteaufbaus zum Schild wird nun anhand der tatsächlichen Ausdehnung des Sets berechnet.
+- Der komplette Slalom-Aufbau liegt bei Standardausrichtung sauber oberhalb des Schildes.
+- Zwischen Schild und nächstem Gerät bleibt ein kleiner visueller Sicherheitsabstand.
+- Die Abstandsermittlung funktioniert auch nach einer Drehung der Station in 90°-Schritten.
+
+#### 🧠 Parcourslogik
+
+- Für verknüpfte Geräte-Sets wird neben der Stationstiefe auch die halbe Ausdehnung des jeweiligen Presets berücksichtigt.
+- Reihen- und Sequenzaufbauten werden anhand von Geräteanzahl und hinterlegtem Abstand berechnet.
+- Rautenförmige Aufbauten können dieselbe Logik über ihre hinterlegte Längsausdehnung verwenden.
+
 ### v0.2.17
 
 #### 🐛 Behoben
