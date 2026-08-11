@@ -8,6 +8,35 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.3.4
+
+#### 🌍 FCI-Equipmentregeln
+
+- FCI-Schilder können jetzt strukturierte Angaben zum benötigten Equipment enthalten.
+- Die bereits regelwerksgesicherten Rückruf- und Kegelübungen wurden mit ihren benötigten Pylonen verknüpft.
+- Im rechten Detailbereich wird bei entsprechenden FCI-Schildern das benötigte Equipment samt Abstandshinweis angezeigt.
+
+#### 🧭 FCI-Gerätemodi
+
+- Neuer dreistufiger Modus für die FCI-Geräteunterstützung:
+  - **Setzhilfe** – das benötigte Gerät wird nach dem Schild direkt zum manuellen Setzen aktiviert.
+  - **Automatisch** – das benötigte Einzelgerät wird automatisch an der hinterlegten empfohlenen Position eingefügt.
+  - **Aus** – keine automatische Geräteunterstützung.
+- Der gewählte FCI-Gerätemodus wird lokal gespeichert.
+
+#### 📏 Live-Abstandsmessung
+
+- Während der manuellen FCI-Setzhilfe wird die Distanz zwischen Schild und aktuell zu platzierendem Gerät live in Metern angezeigt.
+- Bei festen Zielabständen wird der Sollwert direkt eingeblendet.
+- Bei zulässigen Bereichen wird der gültige Meterbereich angezeigt.
+- Erreicht die aktuelle Distanz den hinterlegten Zielwert bzw. liegt sie im erlaubten Bereich, erscheint ein dezentes **✓**.
+- Die Live-Messung nutzt denselben Metermaßstab wie die bestehende Distanzanzeige im Parcours.
+
+#### 🧠 Vorbereitung
+
+- Equipmentbedarf, Gerätemenge, Rollen und Platzierungsregeln sind als eigene FCI-Regeldaten strukturiert.
+- Diese Daten können später direkt für automatische Komplettaufbauten, Regelprüfung und FCI-Generator verwendet werden.
+
 ### v0.3.3
 
 #### 🎨 Darstellung
