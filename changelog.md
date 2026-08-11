@@ -8,6 +8,31 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+
+### v0.3.6
+
+#### 🖐️ Deutlichere Setzhilfe
+
+- Während ein FCI-Gerät oder Geräteaufbau „in der Hand“ ist, folgt jetzt eine sichtbare halbtransparente Vorschau dem Mauszeiger.
+- Die Vorschau besitzt eine dezente Kennzeichnung **„am Mauszeiger“**.
+- Zusätzlich erscheint auf der Parcoursfläche der Hinweis **„Klicken zum Setzen · Esc zum Abbrechen“**.
+- Der Mauszeiger wechselt während der Platzierung in einen Fadenkreuz-Modus.
+
+#### 📐 FCI-Aufbauten sauber setzen
+
+- Mehrteilige FCI-Grundaufbauten verwenden beim manuellen Setzen jetzt tatsächlich die angeklickte Position.
+- Zuvor wurde die Klickposition bei Presets ignoriert und der Aufbau relativ zum Schild erzeugt.
+- 119–122 werden als zusammenhängende Kegelreihe mit **1,75 m Standardabstand** zwischen den Kegeln aufgebaut.
+- Die 1,75 m liegen innerhalb des laut PO erlaubten Bereichs von 1,5–2 m.
+- Der erste Kegel wird nicht mehr durch einen zusätzlichen erzwungenen 1,75-m-Abstand ungewollt weit vom Schild verschoben.
+
+#### 📏 Sinnvollere Distanzanzeige
+
+- Bei den Kegelfiguren 119–122 werden die Abstände zwischen den aufeinanderfolgenden Kegeln dargestellt.
+- Bei 221 werden Kegelabstand und Abstand der beiden Ablenkungen getrennt dargestellt.
+- Bei Sprungaufbauten werden die für den Aufbau relevanten Schild-/Sprung- bzw. Sprung-/Sprung-Distanzen angezeigt.
+- Damit beziehen sich die eingeblendeten Meterangaben stärker auf die tatsächlichen PO-Vorgaben des jeweiligen Aufbaus.
+
 ### v0.3.5
 
 #### 🌍 Vollständige FCI-Gerätezuordnung
