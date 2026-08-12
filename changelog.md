@@ -8,6 +8,48 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.6
+
+#### 🧩 Passage als eigener Aufbau
+
+- Die aktive Trainingspassage kann mit **Als neuen Aufbau** aus einem größeren Parcours herausgelöst werden.
+- Schilder und ihre verknüpften Geräte werden gemeinsam übernommen.
+- Stationsnummern werden für den neuen Aufbau wieder sauber ab 1 vergeben.
+- Der ausgeschnittene Aufbau wird innerhalb des Rings neu positioniert, damit er nicht an einer alten Außenposition hängen bleibt.
+- Der neue Aufbau ist zunächst ungespeichert und kann anschließend unter eigenem Namen in der Parcours-Bibliothek gesichert werden.
+
+#### 📋 Passage duplizieren
+
+- Eine aktive Trainingspassage kann innerhalb des aktuellen Parcours direkt dupliziert werden.
+- Schilder und verknüpfte Geräte werden gemeinsam kopiert.
+- Neue IDs und Gruppen-IDs werden erzeugt; die Kopie bleibt technisch unabhängig vom Original.
+- Die Kopie wird leicht versetzt eingefügt und direkt markiert.
+
+#### A/B Varianten
+
+- Aktueller Trainingsstand kann als frei benannte **Variante** gespeichert werden.
+- Typische Nutzung: Variante A, Variante B, anderer Geräteabstand oder alternative Stationsfolge.
+- Varianten können jederzeit wieder geladen oder gelöscht werden.
+- Die aktuell geladene Variante wird optisch markiert.
+- Varianten speichern Schilder, Geräte, Start/Ziel, Passage und Führseite.
+
+#### 📝 Trainingsnotizen
+
+- Neuer Notizbereich speziell für den Trainingsaufbau.
+- Trainingsnotizen werden mit den Varianten und dem Parcours gespeichert.
+- Schnelle Tags für:
+  - Rückruf
+  - Sprung
+  - Seitenwechsel
+  - Distanz
+  - Ablenkung
+- Tags können jederzeit hinzugefügt und wieder entfernt werden.
+
+#### 💾 Speicherung
+
+- Varianten, Trainingsnotiz und Trainingstags gehören zum vollständigen Parcours-Speicherstand.
+- Dadurch bleiben Trainingsplanung und Varianten auch nach dem Schließen des Browsers erhalten.
+
 ### v0.5.5
 
 #### ↶ Undo & Redo
