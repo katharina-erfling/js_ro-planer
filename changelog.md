@@ -8,6 +8,44 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.4.1
+
+#### 🏟️ Echter Turnierring
+
+- Die bisherige große, schwer überschaubare Scrollfläche wurde durch einen klar abgegrenzten Turnierring ersetzt.
+- Der Ring besitzt echte Maße in Metern und wird maßstäblich innerhalb des Editors dargestellt.
+- Außerhalb des Rings bleibt ein schmaler neutraler Arbeitsbereich zum Zwischenparken von Schildern und Geräten.
+
+#### 📐 Ringgrößen nach PO
+
+- **FCI:** PO-Standard im Planer ist **20 × 20 m**. Das FCI-Regelwerk verlangt in § 3.3 einen Wettkampfring von mindestens 20 × 20 m.
+- **VDH 2027:** PO-Standard ist **20 × 30 m**. Laut § 2.7 wird der Parcours normalerweise auf 20 × 30 m aufgebaut; Abweichungen sind nach Absprache mit dem RO-R möglich.
+- Zusätzlich stehen **20 × 20 m**, **20 × 25 m**, **20 × 30 m** und **Eigene Größe** zur Auswahl.
+- Bei einer FCI-Eingabe unter 20 × 20 m erscheint ein Hinweis auf das unterschrittene Mindestmaß.
+- Bei VDH-Abweichungen wird darauf hingewiesen, dass 20 × 30 m das reguläre Maß ist.
+
+#### 🔍 Zoom & Übersicht
+
+- Neuer Button **Ring einpassen**.
+- Der komplette Turnierring wird automatisch in den verfügbaren Editorbereich eingepasst.
+- Reale Ringgröße und Bildschirmzoom sind nun zwei getrennte Größen.
+- Der Zoom verändert nicht mehr die Bedeutung der Metermaße.
+
+#### 📏 Maßanzeige
+
+- Breite und Länge des Rings werden direkt am Rand angezeigt.
+- Alle 5 m erscheinen dezente Orientierungspunkte.
+- Die Maßanzeige kann über **Maße an / aus** ausgeblendet werden.
+- Das optionale Raster liegt nur innerhalb des eigentlichen Rings.
+
+#### 🖥️ Editorlayout
+
+- Die Oberfläche nutzt die verfügbare Bildschirmhöhe stärker aus.
+- Permanentes Scrollen durch eine übergroße Parcoursfläche wurde reduziert.
+- Bibliothek und Detailpanel können einzeln eingeklappt werden.
+- Werden beide Seitenbereiche geschlossen, steht fast die gesamte Breite für den Turnierring zur Verfügung.
+
+
 ### v0.4.0
 
 #### ✅ Erste FCI-Parcoursprüfung
