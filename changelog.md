@@ -8,6 +8,41 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.1
+
+#### 🗂️ Parcours-Bibliothek
+
+- Mehrere Parcours und Trainingsaufbauten können jetzt parallel lokal im Browser gespeichert werden.
+- **Laden** öffnet eine Bibliotheksübersicht statt nur einen einzelnen Speicherstand.
+- Der aktuell geöffnete Parcours wird gekennzeichnet.
+
+#### 💾 Vollständiger Speicherstand
+
+- Regelwerk, Klasse, FCI-Modus und FCI-Gerätemodus.
+- Ringgröße und relevante Anzeigeoptionen.
+- Sämtliche Schilder, Zusatzschilder, Nummern und Ausrichtungen.
+- Geräte, Gerätegruppen und Verknüpfungen.
+- START und FINISH.
+- Aktive Trainingspassage und Start-Führseite.
+
+#### ✏️ Verwalten
+
+- Parcours erhalten einen frei wählbaren Namen und eine optionale Notiz.
+- Ein geöffneter Parcours wird über **Speichern** aktualisiert.
+- Einträge können geöffnet, umbenannt, dupliziert und gelöscht werden.
+- Bibliothekskarten zeigen Regelwerk, Trainings-/Wettkampfmodus, Stationszahl, Ringgröße und Änderungsdatum.
+
+#### 📦 Backup
+
+- Die komplette Parcours-Bibliothek kann als JSON-Datei exportiert werden.
+- Backups können wieder importiert werden.
+- ID-Konflikte beim Import werden automatisch vermieden.
+- Eine vorhandene alte Einzelspeicherung wird beim ersten Start automatisch in die neue Bibliothek migriert.
+
+#### 🔧 Stabilisiert
+
+- Die mit v0.5.0 eingeführten Start-/Ziel-Elemente, Ablaufsliste und Trainingspassagen-Helfer sind im Versionspaket vollständig enthalten.
+
 ## 🧭 v0.5 – Trainingsworkflow
 
 ### v0.5.0
