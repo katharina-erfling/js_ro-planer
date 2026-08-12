@@ -8,6 +8,17 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.6.2
+
+#### 🛠️ Bibliothek-Hotfix II
+
+- Der fehlerhafte Bibliotheks-Umbau aus v0.5.6.1 wurde zurückgenommen.
+- Die funktionierende Bibliotheksstruktur aus v0.5.6 bleibt vollständig erhalten.
+- **Schilder** und **Geräte** sind trotzdem über zwei feste Tabs direkt oben erreichbar.
+- Der Tabwechsel blendet ausschließlich vorhandene Bereiche ein bzw. aus und verändert keine bestehende DOM-Struktur.
+- Dadurch bleiben Regelwerk, Klasse, Schilderdaten und Geräteinitialisierung unverändert funktionsfähig.
+- Im Geräte-Tab werden Einzelgeräte und Geräte-Sets direkt angezeigt, ohne durch die gesamte Schilderliste scrollen zu müssen.
+
 ### v0.5.6
 
 #### 🧩 Passage als eigener Aufbau
