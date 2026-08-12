@@ -8,6 +8,17 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.3.10
+
+#### 🐛 FCI 221 wieder platzierbar
+
+- Ein Fehler in der Klickerkennung der FCI-Setzhilfe wurde behoben.
+- Mehrteilige Geräteaufbauten wie **221 – Distractions** lassen sich wieder auf der Parcoursfläche setzen.
+- Die Platzierung war fälschlich nur möglich, wenn exakt die eigentliche Parcoursfläche das Klickziel war.
+- Hilfs-, SVG- und Distanzebenen konnten den Klick dadurch abfangen und das Setzen verhindern.
+- Solange ein FCI-Gerät oder Aufbau aktiv „in der Hand“ ist, wird die Platzierung jetzt vor der normalen Flächenauswahl verarbeitet.
+- Klicks auf bereits platzierte Schilder oder Geräte bleiben geschützt, damit dort nicht versehentlich ein neuer Aufbau gesetzt wird.
+
 ### v0.3.9
 
 #### 📐 Maßstabsmodell korrigiert
