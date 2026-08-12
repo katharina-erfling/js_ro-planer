@@ -8,6 +8,35 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.3.9
+
+#### 📐 Maßstabsmodell korrigiert
+
+- Ein grundlegender Darstellungsfehler im Metermaßstab wurde behoben.
+- Bisher wurde die sichtbare Schildkarte gleichzeitig als geometrische Größe behandelt.
+- Bei 55 px = 1 m entsprach ein ca. 96 px breites Schild dadurch rechnerisch fast 1,75 m und Geräte konnten trotz korrektem 1-m-Abstand optisch im Schild stehen.
+- Darstellungsgröße und Messgeometrie sind nun vollständig voneinander getrennt.
+
+#### 📍 Schild-Messpunkt
+
+- FCI-Schilder besitzen jetzt einen eigenen logischen Messpunkt.
+- Distanzen werden von diesem Messpunkt bzw. einer regelrelevanten Schildseite aus berechnet.
+- Bei eingeschalteter Distanzanzeige wird der Messpunkt als kleiner dezenter Punkt auf der Schildkarte sichtbar.
+- Die große, gut lesbare Darstellung des Originalschildes beeinflusst dadurch keine Meterberechnung mehr.
+
+#### 🗼 Geräteplatzierung
+
+- Automatisch gesetzte Pylonen und Sprünge werden zusätzlich auf visuelle Überschneidung mit der Schildkarte geprüft.
+- Falls die UI-Darstellung trotz korrekter PO-Distanz überlappen würde, wird nur die sichtbare Geräteposition nach außen verschoben.
+- Die gespeicherte bzw. angezeigte Regelwerksdistanz bleibt davon unberührt.
+- Dadurch kann beispielsweise ein 1-m-Regelabstand dargestellt werden, ohne dass die Pylone im sichtbaren Schild steckt.
+
+#### 📏 Distanzlabels
+
+- Regelwerksabstände bei automatisch erzeugten FCI-Sprungaufbauten zeigen die hinterlegten PO-Werte statt eines durch die UI-Darstellung verfälschten Pixelabstands.
+- 222/420 zeigen weiterhin 2 m Schild → Sprung.
+- 320 zeigt 2 m zum ersten Sprung sowie 4 m zwischen den beiden Sprüngen.
+
 ### v0.3.8
 
 #### 🐛 FCI-Schildbilder korrigiert
