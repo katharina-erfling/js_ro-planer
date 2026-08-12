@@ -8,6 +8,34 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.7.3
+
+#### 🐾 Intelligenter Laufweg nachgeschärft
+
+- Der intelligente Laufweg erkennt Geräte jetzt über die tatsächlich gespeicherte `typeId`.
+- Dadurch werden FCI-Pylonen und Sprünge nicht mehr fälschlich übergangen.
+- Die künstliche Mini-Zickzacklinie des bisherigen Laufwegs wurde entfernt und durch einen weich geglätteten Verlauf ersetzt.
+
+#### 🔺 FCI 121 / 122 – Slalomlaufweg
+
+- Bei 121/122 läuft die Linie jetzt vom Schild in den Slalom hinein.
+- Die Route wechselt sichtbar von Seite zu Seite zwischen den vier Pylonen.
+- Hinter der letzten Pylone wird die Laufrichtung noch ein Stück weitergeführt, bevor die Verbindung zur nächsten Station beginnt.
+
+#### ↪️ FCI 417 / 418 – Weg um die Pylone
+
+- Der Laufweg führt bei 417/418 jetzt tatsächlich vom Schild zur großen Pylone.
+- Die 90°-Wendung um die Pylone wird als eigener Kurvenverlauf dargestellt.
+- Der Ausstieg aus der Übung folgt anschließend der bereits berechneten neuen Laufrichtung.
+
+#### 📐 Pylonen-Sets am Schild ausgerichtet
+
+- FCI-Slalom-/Spiral-Pylonenreihen können beim manuellen Setzen nicht mehr beliebig seitlich vom Schild landen.
+- Ein Klick bestimmt bei diesen Sets nur noch den Abstand **in Laufrichtung**.
+- Der erste Kegel wird automatisch auf der Mittelachse des Schildes gehalten und auf den zulässigen Bereich **1,5–2,0 m** begrenzt.
+- Die weiteren Kegel werden im korrekten Abstand entlang derselben Laufrichtung aufgebaut.
+- Dadurch bleibt das komplette Geräteset auch beim manuellen FCI-Setzen eindeutig seinem Schild zugeordnet.
+
 ### v0.5.7.2
 
 #### 📄 Echter PDF-Export
