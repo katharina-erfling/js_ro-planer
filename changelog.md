@@ -8,6 +8,45 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.4.0
+
+#### ✅ Erste FCI-Parcoursprüfung
+
+- Neuer Bereich **FCI-Parcoursprüfung** im rechten Detailpanel.
+- Die Prüfung aktualisiert sich automatisch beim Bearbeiten des Parcours.
+- Gefundene Hinweise sind anklickbar und wählen direkt die betroffene Station aus.
+
+#### 🗼 Geräteprüfung
+
+- Fehlende Pflichtgeräte werden für die bereits strukturierten FCI-Geräteübungen erkannt.
+- **119 / 120:** 3 kleine Kegel.
+- **121 / 122:** 4 kleine Kegel.
+- **221:** 2 kleine Kegel und 2 Schalen mit Ablenkung.
+- **222 / 420:** 1 Sprung.
+- **320:** 2 Sprünge.
+- **417 / 418:** 1 großer Kegel.
+- Bei **319 / 408 / 409** wird ein passendes Rückrufschild als Alternative zum kleinen Rückrufkegel berücksichtigt.
+
+#### 📏 Abstandsprüfung
+
+- **119–122:** Kegelabstände 1,5–2,0 m.
+- **221:** Kegelabstand 2,5–3,0 m und Abstand der Ablenkungen 1,5–2,0 m.
+- **222 / 420:** Schild → Sprung 2,0 m.
+- **320:** 2,0 m zum ersten Sprung und mindestens 4,0 m zwischen den Sprüngen.
+- **417 / 418:** Kegel 1,0–2,0 m ab Schildrückseite.
+
+#### 🔗 Rückruf-Kombinationen
+
+- **321 / 322 / 323 / 422** werden auf ein zulässiges Vorgängerschild geprüft.
+- Als Vorgänger werden **319 / 408 / 409** akzeptiert.
+- Der Abstand zum Vorgängerschild wird auf 3,0–5,0 m geprüft.
+
+#### 🎨 Darstellung
+
+- Erfolgreiche Prüfung erscheint dezent grün.
+- Hinweise verwenden eine zurückhaltende warme Warnfarbe.
+- Keine dominanten roten Fehlermeldungen auf der Parcoursfläche.
+
 ### v0.3.10
 
 #### 🐛 FCI 221 wieder platzierbar
