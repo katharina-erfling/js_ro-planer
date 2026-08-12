@@ -8,6 +8,16 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.6.6
+
+#### 🔺 FCI-Gerätesets nur einmal pro Schild
+
+- Ein automatisch bzw. geführt benötigtes FCI-Geräteset kann pro Station jetzt nur noch **einmal** angelegt werden.
+- Nach dem Setzen des kompletten Pylonen-/Gerätesets wird der Platziermodus zuverlässig beendet.
+- Weitere Klicks auf die Fläche erzeugen dadurch keine endlose Folge identischer Pylonensets mehr.
+- Wird die Aufbauhilfe für ein Schild erneut ausgelöst, obwohl dessen Set bereits vorhanden ist, erscheint nur noch ein Hinweis statt eines weiteren Sets.
+- Gelöschte Sets blockieren die Station nicht dauerhaft: Existiert die zugehörige Gerätegruppe tatsächlich nicht mehr, kann der Aufbau erneut gesetzt werden.
+
 ### v0.5.6.5
 
 #### 🚧 Geräteaufbau folgt der Schildausrichtung
