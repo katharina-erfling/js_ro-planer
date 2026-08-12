@@ -8,6 +8,29 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.6.3
+
+#### 🚑 Startfehler behoben
+
+- Die eigentliche Ursache der leeren Oberfläche wurde gefunden und behoben.
+- Mehrere Modaldialoge waren in den letzten Versionen **nach** den JavaScript-Dateien im HTML eingefügt worden.
+- Dadurch startete `app.js`, bevor diese Bedienelemente im DOM existierten, und die Initialisierung konnte mit einem JavaScript-Fehler abbrechen.
+- `data.js` und `app.js` werden jetzt konsequent **erst nach allen UI-Elementen** geladen.
+- Regelwerk, Klasse, Schilder und sämtliche Klickfunktionen können dadurch wieder vollständig initialisiert werden.
+
+#### 🧰 Geräte direkt erreichbar
+
+- **Schilder** und **Geräte** erhalten zwei feste Tabs oben in der Bibliothek.
+- Die bestehende funktionierende Bibliotheksstruktur wird dabei nicht umgebaut.
+- Der Geräte-Tab blendet lediglich Filter und Schilderliste aus und zeigt den vorhandenen Gerätebereich.
+- Einzelgeräte und Geräte-Sets sind dadurch ohne Scrollen durch die komplette Schilderbibliothek erreichbar.
+
+#### 🔙 Hotfix-Hinweis
+
+- v0.5.6.1 und v0.5.6.2 sollten nicht weiterverwendet werden.
+- v0.5.6.3 basiert wieder direkt auf v0.5.6 und enthält nur den Startfehler-Fix sowie die sichere Tab-Navigation.
+
+
 ### v0.5.6.2
 
 #### 🛠️ Bibliothek-Hotfix II
