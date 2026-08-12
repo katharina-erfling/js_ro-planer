@@ -8,6 +8,24 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.6.8
+
+#### ◀️▶️ Seitenpanel-Ausblendung repariert
+
+- Der Fehler beim Ausblenden von **Bibliothek** oder **Details** wurde behoben.
+- Ursache war die automatische CSS-Grid-Platzierung: Wurde ein Seitenpanel ausgeblendet, konnte der Parcoursbereich in die nun 0 px breite Seitenspalte rutschen und dadurch scheinbar vollständig verschwinden.
+- Bibliothek, Parcoursbereich und Detailpanel besitzen jetzt feste Grid-Spalten.
+- Der Parcours bleibt dadurch beim Ein- und Ausblenden der Seitenbereiche immer in der mittleren Arbeitsfläche sichtbar.
+- Nach einem Panelwechsel wird die Editorgröße erst nach abgeschlossenem Layoutwechsel neu berechnet.
+
+#### 🔍 Größere Standardansicht
+
+- Beim Start wird der Parcours nicht mehr zwangsläufig vollständig in Höhe **und** Breite auf eine sehr kleine Ansicht zusammengeschrumpft.
+- Die Standardansicht priorisiert jetzt eine gut lesbare **Arbeitsgröße anhand der verfügbaren Breite**.
+- Bei hohen 20 × 30-m-Ringen darf die Arbeitsfläche deshalb vertikal scrollen, statt den gesamten Ring als kleines Vorschaubild darzustellen.
+- Der Button **Einpassen** behält weiterhin seine bisherige Funktion und zeigt auf Wunsch den vollständigen Ring auf einmal.
+- Nach dem Ein-/Ausblenden eines Seitenpanels wird wieder eine gut lesbare Arbeitsgröße hergestellt.
+
 ### v0.5.6.7
 
 #### 📐 Schildmaßstab verkleinert
