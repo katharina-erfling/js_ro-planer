@@ -8,6 +8,42 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+## 🧭 v0.5 – Trainingsworkflow
+
+### v0.5.0
+
+#### 🚩 Start & Ziel
+
+- **START** und **FINISH** sind im FCI-Modus jetzt echte Parcours-Elemente.
+- Beide verwenden die offiziellen FCI-Grafiken.
+- Sie können aus der Bibliothek frei auf den Ring gezogen und anschließend verschoben werden.
+- START und FINISH erhalten bewusst keine Stationsnummer.
+- Beide werden in Laufweg und Distanzanzeige vor bzw. nach den nummerierten Übungen berücksichtigt.
+
+#### ↕️ Stationsablauf
+
+- Neuer Bereich **Ablauf** im rechten Detailpanel.
+- Die Reihenfolge wird als **Start → 1 → 2 → … → Ziel** dargestellt.
+- Nummerierte Stationen können innerhalb dieser Liste per Drag & Drop verschoben werden.
+- Beim Umsortieren werden die Stationsnummern automatisch auf 1…n neu vergeben.
+- Laufweg, Distanzanzeige und FCI-Prüfung verwenden sofort die neue Reihenfolge.
+- Über **Neu nummerieren** kann eine vorhandene Reihenfolge jederzeit lückenlos nummeriert werden.
+
+#### 🧩 Trainingspassage
+
+- Im FCI-Trainingsmodus kann eine Passage über **von / bis** festgelegt werden.
+- Alternativ können im Parcours markierte Stationen mit **Markierte Stationen als Passage** übernommen werden.
+- Stationen außerhalb der aktiven Passage werden im Ablauf dezent ausgegraut.
+- Die FCI-Regelprüfung beschränkt sich im Trainingsmodus auf die aktive Passage.
+- Globale Wettkampfregeln bleiben weiterhin ausschließlich im Modus Wettkampfparcours aktiv.
+- Über **Alle** wird wieder die gesamte Trainingsfolge verwendet.
+
+#### 📏 Trainingsdistanz
+
+- Für die aktive Passage werden Anzahl der Stationen und die ungefähre Gesamtdistanz angezeigt.
+- Die Distanz wird entlang der Stationsreihenfolge von Messpunkt zu Messpunkt summiert.
+- Die Anzeige aktualisiert sich automatisch nach Verschieben, Umsortieren oder Änderung der Passage.
+
 ### v0.4.5
 
 #### 🧩 Trainingsmodus
