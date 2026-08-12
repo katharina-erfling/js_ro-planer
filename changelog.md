@@ -8,6 +8,22 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.6.7
+
+#### 📐 Schildmaßstab verkleinert
+
+- Die Schilder auf dem Parcours wurden deutlich verkleinert, damit sie im Verhältnis zum 20 × 20 m bzw. 20 × 30 m Ring weniger überdimensioniert wirken.
+- Die bisherige große Stationskarte wurde auf eine kompaktere Parcoursdarstellung reduziert.
+- Messpunkt, Drag-Grenzen und Stationsgeometrie wurden an die neue Darstellungsgröße angepasst.
+- Mehrschildübungen bestehen weiterhin aus einzelnen Schildern; jedes einzelne Schild verwendet denselben Grundmaßstab.
+
+#### 🚩 START & FINISH vereinheitlicht
+
+- **START**, **FINISH** und normale Übungsschilder verwenden auf dem Parcours jetzt dieselbe Grundbreite und Grundhöhe.
+- START und FINISH wirken dadurch nicht mehr wie anders skalierte Sonderobjekte.
+- Die offiziellen Grafiken bleiben erhalten und werden innerhalb derselben Schildfläche proportional eingepasst.
+- Auch Verschieben, Zentrierung und Laufweg-Anbindung verwenden die einheitliche Schildgröße.
+
 ### v0.5.6.6
 
 #### 🔺 FCI-Gerätesets nur einmal pro Schild
