@@ -8,6 +8,50 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.5
+
+#### ↶ Undo & Redo
+
+- Neue Buttons für **Rückgängig** und **Wiederholen** in der Kopfleiste.
+- Bis zu 60 Bearbeitungsstände werden im aktuellen Editorverlauf gehalten.
+- Drag-/Verschiebeaktionen werden nach Abschluss als zusammenhängender Bearbeitungsstand erfasst.
+- Tastenkürzel: **Strg/Cmd + Z**, **Strg/Cmd + Y** und **Strg/Cmd + Shift + Z**.
+
+#### 📋 Kopieren & Duplizieren
+
+- Einzelne und mehrfach ausgewählte Schilder/Geräte können kopiert und wieder eingefügt werden.
+- **Strg/Cmd + C** kopiert, **Strg/Cmd + V** fügt mit kleinem Versatz ein.
+- **Strg/Cmd + D** dupliziert die aktuelle Auswahl direkt.
+- Verknüpfte Geräte einer kopierten Station werden automatisch mitkopiert.
+- Interne Stations-, Geräte- und Gruppen-IDs werden beim Einfügen sauber neu erzeugt.
+- Verknüpfungen der kopierten Geräte zeigen anschließend auf die neu erzeugte Station statt auf das Original.
+
+#### 📐 Ausrichten
+
+- Neue Aktionen in der Mehrfachauswahl:
+  - links ausrichten
+  - horizontal mittig ausrichten
+  - rechts ausrichten
+  - oben ausrichten
+  - vertikal mittig ausrichten
+  - unten ausrichten
+- Beim Ausrichten einer Station bewegen sich ihre verknüpften Geräte relativ mit.
+
+#### ↔️ Gleichmäßig verteilen
+
+- Ab drei markierten Elementen kann die Auswahl **horizontal** oder **vertikal** gleichmäßig verteilt werden.
+- Die beiden äußeren Elemente bleiben als Begrenzung erhalten; die übrigen werden gleichmäßig dazwischen angeordnet.
+
+#### ⌨️ Tastaturbedienung
+
+- **Entf / Backspace:** aktuelle Auswahl löschen.
+- **Strg/Cmd + C:** kopieren.
+- **Strg/Cmd + V:** einfügen.
+- **Strg/Cmd + D:** duplizieren.
+- **Strg/Cmd + Z:** rückgängig.
+- **Strg/Cmd + Y** oder **Strg/Cmd + Shift + Z:** wiederholen.
+- Tastenkürzel greifen nicht, während in Eingabe-, Text- oder Auswahlfeldern geschrieben wird.
+
 ### v0.5.3
 
 #### ↔️ Führseitenverlauf
