@@ -8,6 +8,58 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.4.4
+
+#### 🧠 FCI-Regelengine erweitert
+
+- Die Parcoursprüfung berücksichtigt jetzt zusätzlich globale Regeln aus der **FCI Rally Obedience PO 2024**.
+- Fehler und Hinweise werden getrennt gezählt und optisch unterschiedlich dargestellt.
+- Anklickbare Stationsmeldungen springen weiterhin direkt zum betroffenen Schild.
+
+#### 🧮 Parcoursaufbau
+
+- Prüfung auf **18–20 nummerierte Übungen** zuzüglich Start und Ziel.
+- Ein einzelnes Übungsschild darf höchstens **zweimal** verwendet werden.
+- Prüfung auf mindestens **7 Vier-Punkte-Schilder**.
+- Prüfung auf mindestens **5 Drei-Punkte-Schilder**.
+- Die für den Parcours vorgeschriebene **Führseite am Start** kann im Prüfbereich angegeben werden.
+
+#### 📏 Abstände & Geometrie
+
+- Der allgemeine Abstand zwischen aufeinanderfolgenden Übungen wird gegen die PO-Empfehlung von ungefähr **3–5 m** geprüft.
+- Abweichungen bei normalen Stationen erscheinen als Hinweis statt als harter Fehler, da die PO ausdrücklich Sonderfälle und angenäherte Maße vorsieht.
+- Bekannte Rückruf-Sonderkombinationen werden von dieser allgemeinen Prüfung ausgenommen.
+- Schilder und mit einer Station verknüpfte Geräte außerhalb des markierten Turnierrings werden erkannt.
+
+#### 🗼 Übung 410
+
+- Der große Sendekegel wird auf **3–5 m** Abstand zum Schild geprüft.
+- Der Rückrufkegel wird auf ungefähr **5 m** geprüft.
+- Zwischen Sendekegel und Rückrufkegel müssen mindestens **2 m** liegen.
+
+#### 🔗 Rückrufschilder
+
+- **321 / 322 / 323 / 422:** weiterhin nur nach 319, 408 oder 409 und mit 3–5 m Abstand.
+- **421:** nur nach 319, 408 oder 409.
+- Für 421 wird der besondere Abstand von ungefähr **8 m** zum vorherigen Schild geprüft.
+
+#### ↔️ Führseite
+
+- **417** wird darauf geprüft, dass die Übung linksgeführt begonnen wird; danach ist das Team rechtsgeführt.
+- **418** wird darauf geprüft, dass die Übung rechtsgeführt begonnen wird; danach ist das Team linksgeführt.
+- Vorhandene Seitenwechsel-Metadaten anderer Schilder werden bei der weiteren Führseitenberechnung berücksichtigt.
+
+#### 🦘 Sprünge
+
+- Es wird geprüft, dass sich insgesamt höchstens **2 physische Sprünge** im Parcours befinden.
+- Die bereits vorhandenen Abstandsprüfungen für 222, 320 und 420 bleiben erhalten.
+
+#### ℹ️ Prüfstatus
+
+- **Fehler** markieren eindeutig verletzte, automatisch prüfbare Regeln.
+- **Hinweise** markieren insbesondere ungefähre bzw. kontextabhängige Abstände.
+- Regeln, die sich aus einem zweidimensionalen Parcoursplan nicht zuverlässig ableiten lassen, werden nicht als scheinbar sichere automatische Prüfung ausgegeben.
+
 ### v0.4.3
 
 #### 🧰 Werkzeugleiste neu geordnet
