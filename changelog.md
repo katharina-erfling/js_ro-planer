@@ -8,6 +8,34 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.3
+
+#### ↔️ Führseitenverlauf
+
+- Neuer Bereich **Führseitenverlauf** im rechten FCI-Panel.
+- Nach Festlegen der Startseite wird für jede nummerierte Übung die aktuelle Führseite angezeigt.
+- Seitenwechsel werden direkt als **links → rechts** bzw. **rechts → links** visualisiert.
+- Schilder ohne Seitenwechsel übernehmen automatisch die vorherige Führseite.
+
+#### 🧠 Automatische Berechnung
+
+- Vorhandene `changesHandlingSide`-Metadaten der FCI-Schilder werden in der Reihenfolge des Parcours ausgewertet.
+- **417** wird als linksgeführt gestartete Übung geprüft und wechselt anschließend auf rechts.
+- **418** wird als rechtsgeführt gestartete Übung geprüft und wechselt anschließend auf links.
+- Die Berechnung läuft nach jedem Verschieben, Umsortieren oder Ändern der Passage automatisch neu.
+
+#### ⚠️ Konflikte
+
+- Unpassende Führseite bei 417/418 wird direkt in der Verlaufsliste markiert.
+- Betroffene Einträge sind anklickbar und springen zur jeweiligen Station.
+- Ohne festgelegte Startseite zeigt der Bereich bewusst „unbekannt“ statt eine Führseite zu raten.
+
+#### 🧩 Trainingspassage
+
+- Im Trainingsmodus berücksichtigt der Führseitenverlauf nur die aktive Trainingspassage.
+- Im Wettkampfmodus wird die vollständige nummerierte Stationsfolge ausgewertet.
+
+
 ### v0.5.2
 
 #### 🖨️ Druck- & PDF-Ansicht
