@@ -8,6 +8,40 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.7.4
+
+#### 🗺️ Arbeitsfläche und Schilddimensionen entkoppelt
+
+- Die bisherige Darstellung hatte einen Zielkonflikt: kleinere Schilder passten besser zum Ringmaßstab, waren aber kaum noch lesbar.
+- Die Schilder werden deshalb wieder etwas größer und lesbarer dargestellt, ohne dafür den Turnierring künstlich kleiner zu rechnen.
+- Der Ring bleibt weiterhin über den festen Metermaßstab definiert; die Schildgrafik ist jetzt stärker als Bedienelement statt als maßstäbliches Objekt gedacht.
+- START, FINISH und normale Schilder behalten weiterhin dieselbe Grundgröße.
+
+#### 🔍 Größere Arbeitsansicht
+
+- Die Standardansicht schrumpft den Ring nicht mehr so stark zusammen.
+- Auf großen Desktop-Bildschirmen wird eine deutlich höhere minimale Arbeitsvergrößerung verwendet.
+- Falls der vollständige Ring dadurch nicht gleichzeitig sichtbar ist, wird bewusst gescrollt bzw. verschoben.
+- Einpassen bleibt für die komplette Ringübersicht erhalten.
+
+#### 🖱️ Canvasartige Navigation
+
+- Mausrad: Parcours vertikal bewegen.
+- Shift + Mausrad: horizontal bewegen.
+- Strg/Cmd + Mausrad: ausschließlich den Parcours zoomen.
+- Zoom erfolgt um die aktuelle Mausposition.
+- Zoom-Buttons zoomen um die Mitte der aktuellen Ansicht.
+
+#### ✋ Parcours verschieben
+
+- Leertaste + linke Maustaste ziehen: Arbeitsfläche verschieben.
+- Mittlere Maustaste ziehen: ebenfalls verschieben.
+- Währenddessen zeigt der Mauszeiger Hand/Greifhand.
+
+#### 🎯 Zentrierung
+
+- Nach automatischer Größenanpassung und nach Einpassen wird der Ring im Viewport zentriert.
+
 ### v0.5.7.3
 
 #### 🐾 Intelligenter Laufweg nachgeschärft
