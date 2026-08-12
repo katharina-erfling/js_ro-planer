@@ -8,6 +8,23 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.7.0
+
+#### ↪️ FCI 417 / 418 – Ausgangsrichtung korrigiert
+
+- Die Richtungslogik für **417 – 90° LEFT TURN AROUND CONE** und **418 – 90° RIGHT TURN AROUND CONE** wurde ergänzt.
+- Nach **417** endet das Team in einer um **90° nach links** veränderten Laufrichtung.
+- Nach **418** endet das Team in einer um **90° nach rechts** veränderten Laufrichtung.
+- Das danach automatisch nummerierte Schild wird jetzt entsprechend dieser neuen Laufrichtung ausgerichtet.
+- Damit folgt die Schildausrichtung nach der Wendung um die Pylone wieder dem tatsächlichen Parcoursverlauf.
+
+#### 🔧 FCI 414 / 415 nebenbei korrigiert
+
+- Bei der Kontrolle der Richtungslogik ist außerdem eine falsche Ausgangsrichtung für 414/415 aufgefallen.
+- **414** endet laut Übungsablauf 90° links zur ursprünglichen Richtung und wird jetzt entsprechend berechnet.
+- **415** endet 90° rechts zur ursprünglichen Richtung.
+- Zuvor waren beide fälschlich als 180°-Richtungswechsel hinterlegt.
+
 ### v0.5.6.9
 
 #### 🔄 Zoom beim Regelwerkwechsel repariert
