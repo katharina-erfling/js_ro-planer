@@ -8,6 +8,23 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.7.1
+
+#### 💾 Gespeicherte Parcours lassen sich wieder öffnen
+
+- Der Fehler beim Öffnen eines gespeicherten Parcours wurde behoben.
+- Ursache war ein JavaScript-Fehler in der Ladefunktion:
+  `renderClassOptions()` wurde aufgerufen, obwohl diese Funktion nicht existiert.
+- Dadurch brach das Wiederherstellen eines gespeicherten Parcours ab.
+- Die Ladefunktion verwendet jetzt wieder die vorhandene Funktion `renderClasses()`.
+- Regelwerk, Klasse, Stationen, Geräte, Start/Ziel, Ringgröße und Anzeigeeinstellungen werden wiederhergestellt.
+
+#### 🔍 Arbeitsansicht nach dem Laden
+
+- Geladene Parcours öffnen sich ebenfalls in der größeren Arbeitsansicht.
+- Sie springen nicht mehr automatisch in die kleine Vollring-Ansicht.
+- **Einpassen** bleibt die bewusste Option für die vollständige Ringübersicht.
+
 ### v0.5.7.0
 
 #### ↪️ FCI 417 / 418 – Ausgangsrichtung korrigiert
