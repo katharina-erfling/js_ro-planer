@@ -8,6 +8,22 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.6.5
+
+#### 🚧 Geräteaufbau folgt der Schildausrichtung
+
+- Verknüpfte Geräteaufbauten folgen jetzt konsequent der Ausrichtung ihres Schildes.
+- Wird ein Schild um **90°, 180° oder 270°** gedreht, rotiert die komplette Geräteanordnung geometrisch um das Schild mit.
+- Das gilt für manuelle Schilddrehungen und für die automatische FCI-Ausrichtung.
+- Ein Slalom, der vor dem Schild liegt, liegt nach einer Kehrtwendung wieder **vor dem Schild in der neuen Laufrichtung**.
+- Das gleiche Prinzip gilt für verknüpfte Pylonen-, Schalen-/Ablenkungs- und Sprungaufbauten.
+
+#### 🔺 Geräte bleiben optisch aufrecht
+
+- Nur die **Positionen** der Geräte drehen sich um das Schild.
+- Pylonen und Schalen drehen ihre eigene Grafik nicht mit.
+- Die interne Gruppenrotation wird trotzdem aktualisiert, damit spätere Gruppenaktionen zur neuen Anordnung passen.
+
 ### v0.5.6.4
 
 #### 🧭 Automatische Schildausrichtung für FCI
