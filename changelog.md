@@ -8,6 +8,24 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+
+### v0.4.2
+
+#### 🐛 Turnierring-Darstellung repariert
+
+- Ein Fehler aus dem Layout-Umbau von v0.4.1 wurde behoben.
+- Der Ring wurde korrekt in Metern berechnet, aber per CSS-Transform skaliert, ohne dass der umgebende Layout-Container seine Größe entsprechend angepasst hat.
+- Dadurch zeigte der Editor nur einen kleinen, oben links abgeschnittenen Ausschnitt des Rings.
+- Der Parcours besitzt jetzt einen eigenen **Zoom-Stage-Container**.
+- Dieser Container übernimmt die tatsächlich skalierte Bildschirmbreite und -höhe des Parcours.
+- Der Ring bleibt dadurch vollständig sichtbar und korrekt innerhalb des Arbeitsbereichs positioniert.
+
+#### 🔍 Ring einpassen
+
+- **Ring einpassen** wurde an den neuen Zoom-Container angepasst.
+- Breite und Höhe des verfügbaren Editorbereichs werden gemeinsam berücksichtigt.
+- Bei kleinen Fenstern bleibt Scrollen als Fallback erhalten, statt Inhalte abzuschneiden.
+
 ### v0.4.1
 
 #### 🏟️ Echter Turnierring
