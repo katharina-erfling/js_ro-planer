@@ -8,6 +8,24 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.4.3
+
+#### 🧰 Werkzeugleiste neu geordnet
+
+- Die zunehmend volle obere Werkzeugleiste wurde strukturell überarbeitet.
+- Funktionen sind jetzt in klar erkennbare Gruppen gegliedert, statt als lange Reihe einzelner Bedienelemente zu erscheinen.
+- **Parcours:** Nummerierungsmodus und FCI-Gerätehilfe.
+- **Anzeige:** Distanzen, Laufweg, Nummern, Raster und Ringmaße.
+- **Ring & Zoom:** Ringgröße, Ring einpassen und Zoomsteuerung.
+- **Seitenbereiche:** kompakte Schalter für Bibliothek und Detailpanel.
+
+#### 🎨 Darstellung
+
+- Zusammengehörige Werkzeuge erhalten dezente gemeinsame Container.
+- Beschriftungen wurden verkürzt, ohne Funktionen zu entfernen.
+- Die Zoomsteuerung ist als zusammengehöriges Bedienelement erkennbar.
+- Bibliothek und Details verwenden kompakte Pfeilbuttons mit Tooltip statt langer Beschriftungen.
+- Bei schmaleren Fenstern bricht die Toolbar gruppenweise um und bleibt dadurch besser lesbar.
 
 ### v0.4.2
 
