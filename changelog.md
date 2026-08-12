@@ -8,6 +8,17 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.2
+
+#### 🖨️ Druck- & PDF-Ansicht
+
+- Neuer Button **Drucken / PDF**.
+- Aufgeräumte Druckansicht im **A4-Querformat** ohne Editor-Oberfläche.
+- Laufweg, Distanzen, Parcoursnotiz und Stationsfolge können für den Ausdruck einzeln gewählt werden.
+- Die Stationsfolge enthält Stationsnummer, Schildcode und Übungsbezeichnung.
+- START und FINISH bleiben im Parcoursplan ohne künstliche Stationsnummer.
+- PDF-Erstellung erfolgt über den normalen Browser-Druckdialog mit **„Als PDF speichern“**.
+
 ### v0.5.1
 
 #### 🗂️ Parcours-Bibliothek
