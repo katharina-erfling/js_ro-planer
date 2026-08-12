@@ -8,6 +8,39 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.4.5
+
+#### 🧩 Trainingsmodus
+
+- Neuer FCI-Modus **Training** für einzelne Übungen, kurze Sequenzen und Trainingspassagen.
+- Training ist standardmäßig ausgewählt.
+- Eine Passage darf beliebig kurz sein, ohne Meldungen zu fehlender Gesamtzahl oder Punkteverteilung zu erzeugen.
+- Die lokale PO-Prüfung bleibt vollständig aktiv.
+
+#### ✅ Lokale Prüfung im Training
+
+- Benötigte Geräte und fehlendes Equipment werden weiterhin geprüft.
+- Kegel-, Ablenkungs- und Sprungabstände werden weiterhin geprüft.
+- Rückrufkombinationen und ihre speziellen Abstände bleiben aktiv.
+- 410, 417, 418, 421 sowie weitere bereits strukturierte Sonderübungen behalten ihre lokalen Prüfregeln.
+- Allgemeine Abstände zwischen aufeinanderfolgenden Übungen bleiben als dezente Hinweise sichtbar.
+- Liegt eine Startseite für die Passage fest, wird auch die Führseitenfolge einschließlich 417/418 geprüft.
+
+#### 🏆 Wettkampfparcours
+
+- Neuer Modus **Wettkampfparcours** schaltet zusätzlich die globalen FCI-Parcoursregeln frei.
+- Nur in diesem Modus werden **18–20 Übungen** verlangt.
+- Nur in diesem Modus wird geprüft, ob ein Schild höchstens zweimal vorkommt.
+- Nur in diesem Modus werden mindestens **7 Vier-Punkte-** und **5 Drei-Punkte-Schilder** verlangt.
+- Nur in diesem Modus wird die Begrenzung auf höchstens **2 physische Sprünge** im gesamten Parcours geprüft.
+- Die Startseite des Hundes ist im Wettkampfmodus weiterhin eine Pflichtangabe.
+
+#### 🎛️ Bedienung
+
+- Der Modus ist direkt in der oberen FCI-Werkzeuggruppe auswählbar: **Training | Wettkampfparcours**.
+- Im Prüfbereich wird erklärt, welche Prüftiefe gerade aktiv ist.
+- Die gewählte Einstellung wird lokal gespeichert.
+
 ### v0.4.4
 
 #### 🧠 FCI-Regelengine erweitert
