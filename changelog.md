@@ -8,6 +8,17 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.6.9
+
+#### 🔄 Zoom beim Regelwerkwechsel repariert
+
+- Beim Wechsel zwischen **VDH** und **FCI** wird die Arbeitsansicht nicht mehr auf die kleine Vollring-Ansicht zurückgesetzt.
+- Ursache war die automatische PO-Ringvoreinstellung: Sie hat beim Regelwerkwechsel intern erneut **Einpassen** ausgelöst.
+- Die jeweilige Standard-Ringgröße wird weiterhin automatisch übernommen.
+- Danach verwendet der Editor jetzt wieder die größere **Arbeitsansicht**.
+- Auch beim Wechsel zurück von FCI zu VDH bleibt die größere Darstellung erhalten.
+- **Einpassen** bleibt weiterhin eine bewusste manuelle Aktion, wenn der komplette Ring auf einmal sichtbar sein soll.
+
 ### v0.5.6.8
 
 #### ◀️▶️ Seitenpanel-Ausblendung repariert
