@@ -8,6 +8,29 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.6.4
+
+#### 🧭 Automatische Schildausrichtung für FCI
+
+- Die automatische Schildausrichtung folgt jetzt auch im **FCI-Regelwerk** der tatsächlichen Ausgangsrichtung der vorherigen Übung.
+- Beispiel: Führt ein Schild über eine **Kehrtwendung / 180°-Drehung** in die Gegenrichtung, wird das danach automatisch nummerierte Schild ebenfalls um 180° gedreht gesetzt.
+- 90°-Drehungen beeinflussen die folgende Schildausrichtung entsprechend nach rechts bzw. links.
+- 270°-Übungen werden auf ihre tatsächliche Ausgangsrichtung umgerechnet.
+- 360°-Übungen behalten die bisherige Laufrichtung bei.
+
+#### 🔄 Reihenfolge neu berechnen
+
+- Wird die Stationsfolge per Drag & Drop umsortiert, werden automatisch ausgerichtete Folgeschilder neu berechnet.
+- Auch nach einer Änderung der Stationsnummer wird die automatische Richtungskette aktualisiert.
+- Bereits **manuell gedrehte Schilder** bleiben unangetastet; die Automatik überschreibt bewusst keine manuelle Ausrichtung.
+- Verknüpfte Geräte drehen bzw. verschieben sich bei einer automatisch erforderlichen Schilddrehung weiterhin gemeinsam mit ihrer Station.
+
+#### 🌍 FCI-Richtungslogik
+
+- Für FCI-Schilder mit eindeutigem Richtungswechsel wurde eine eigene Ausgangsrichtungslogik ergänzt.
+- Abgedeckt sind insbesondere Kehrt-/180°-Übungen, 90°-Drehungen, 270°-Drehungen und eindeutige Turn-around-Rückrufübungen.
+- Damit verhält sich die automatische Nummerierung nun analog zur bereits vorhandenen VDH-Richtungslogik.
+
 ### v0.5.6.3
 
 #### 🚑 Startfehler behoben
