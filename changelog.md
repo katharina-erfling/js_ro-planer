@@ -8,6 +8,35 @@ Alle wichtigen Änderungen und Entwicklungsschritte von **RO Planer**.
 > Fehlerbehebungen, ohne unnötige interne Implementierungsdetails offenzulegen.
 
 ------------------------------------------------------------------------
+### v0.5.7.2
+
+#### 📄 Echter PDF-Export
+
+- Die bisherige Browser-Druckansicht wurde ersetzt.
+- **PDF speichern** erzeugt jetzt direkt eine echte `.pdf`-Datei und lädt sie herunter.
+- Es öffnet sich kein Browser-Druckdialog mehr und es muss kein Drucker bzw. „Als PDF speichern“ ausgewählt werden.
+- Der Export funktioniert vollständig lokal im Browser ohne Server oder externen PDF-Dienst.
+
+#### 🗺️ Parcoursseite
+
+- Der Parcours wird für die PDF-Ausgabe eigens gerendert statt die Editor-Oberfläche zu kopieren.
+- Turnierring, Schilder, START/FINISH und Geräte werden in die PDF übernommen.
+- Stationsnummern werden als kleine Nummernmarken am jeweiligen Schild ausgegeben.
+- Laufweg und Distanzen können wie bisher optional ein- bzw. ausgeschaltet werden.
+- Die gespeicherte Parcoursnotiz kann optional mit ausgegeben werden.
+
+#### 📋 Stationsfolge
+
+- Die Stationsfolge kann weiterhin optional als zweite PDF-Seite angehängt werden.
+- Sie enthält Stationsnummer, Schildcode und Übungsbezeichnung.
+
+#### 🧰 Technische Änderung
+
+- Die für den Parcours benötigten Schildgrafiken werden lokal im Versionspaket für den PDF-Renderer bereitgestellt.
+- Dadurch bleibt der Export auch bei lokal geöffneter `index.html` ohne Internetverbindung funktionsfähig.
+- Die PDF-Datei wird direkt im Browser erzeugt und als Download bereitgestellt.
+
+
 ### v0.5.7.1
 
 #### 💾 Gespeicherte Parcours lassen sich wieder öffnen
